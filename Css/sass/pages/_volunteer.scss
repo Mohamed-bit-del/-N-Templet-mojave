@@ -1,0 +1,126 @@
+/*=-=-=-=-=-=-=-=-=-=-=- Start Main Information -=-=-=-=-=-=-=-=-=-=*/
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 150px;
+
+    .information__volunteer-title {
+      margin-block-end: 100px;
+      line-height: 1.5;
+      
+      @media #{$minSmall} {
+        max-width: 100%;
+      }
+      
+      @media #{$minMedium} {
+        max-width: 70%;
+      }
+
+      .volunteer-title__headding {
+        color: $headinColor;        
+        font-weight: bolder;
+        
+        @media #{$minSmall} {
+          font-size: 50px;
+        }
+        
+        @media #{$minMedium} {
+          font-size: 35px;
+        }
+      }
+
+
+      .volunteer-title__text {
+        color: $textColor;
+     
+        @media #{$minSmall} {
+          font-size: 30px;
+        }
+        
+        @media #{$minMedium} {
+          font-size: 18px;
+        }
+      }
+
+  }
+    .information__form {
+     
+      @media #{$minSmall} {
+        width: 100%;
+        margin: auto;
+      }
+     
+      @media #{$minMedium} {
+        width: 70%;
+      }
+     
+      @media #{$minLarge} {
+        width: 70%;
+      }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          color: $lableColor;
+        }
+
+        .form__name {
+          display: flex;
+          position: relative;
+
+          .lable-name {
+            position: absolute;
+            bottom: 60px;
+          }
+          
+          .name__first {
+            @extend %input-form;
+            height: 40px;
+            width: $width / 2;
+            margin-inline-end: 10px;
+            padding-inline-start: 5px;
+          }
+
+          .name__last {
+            @extend %input-form;
+            height: 40px;
+            width: $width / 2;
+            padding-inline-start: 5px;
+          }
+        }
+
+        .form__email {
+          height: 40px;
+          @extend %input-form;
+        }
+
+        .form__subject {
+          height: 40px;
+          @extend %input-form;
+        }
+
+        .form__textarea {
+          @extend %input-form;
+          height: 200px;
+        }
+
+        .form__btn {
+          @extend %btn;
+      }
+    }
+  }
+   
+}
+/*=-=-=-=-=-=-=-=-=-=-=- End Main Information -=-=-=-=-=-=-=-=-=-=*/
+
+%input-form {
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid $textColor;
+  color: $headinColor;
+  margin-block: 10px;
+}

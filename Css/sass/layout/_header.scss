@@ -1,0 +1,230 @@
+/*=-=-=-=-=-=-=-=-=-=-=-=- Start Relative Box -=-=-=-=-=-=-=-=-=-=-=-=-=*/
+.create-site {
+  position: fixed;
+  background: #121212;
+  right: 15px;
+  bottom: 10px;
+  z-index: 99999;
+  display: flex;
+  padding-inline-start: 50px;
+
+  @media #{$minSmall} {
+    width: 450px;
+    height: 160px;
+  }
+  
+  @media #{$minMedium} {
+    width: 300px;
+    height: 100px;
+  }
+  
+  @media #{$minLarge} {
+    width: 300px;
+    height: 100px;
+  }
+
+    .create-site__link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+
+        .link__icon {
+          line-height: 0;
+
+          // .link__logo {
+
+          //   @media #{$minSmall} {
+          //     width: 70px;
+          //   }
+
+          //   @media #{$minMedium} {
+          //     width: auto;
+          //   }
+
+          //   @media #{$minLarge} {
+          //     width: auto;
+          //   }
+          // }
+        }
+        
+        .link__title {
+          color: $logoColor;
+          display: flex;
+          flex-direction: column;
+          padding-inline-start: 20px;
+          font-size: 23px;
+
+          @media #{$minSmall} {
+           font-size: 40px;
+          }
+          
+          @media #{$minMedium} {
+            font-size: 23px;
+          }
+          
+          @media #{$minLarge} {
+            font-size: 23px;
+          }
+        }
+
+        .title__small-site {
+          padding-block-start: 5px;
+          font-size: 15px;
+
+          // @media #{$maxMobile} {
+          //   font-size: 20px;
+          // }
+          
+          @media #{$minSmall} {
+            font-size: 25px;
+          }
+        
+          @media #{$minMedium} {
+            font-size: 11px;
+          }
+        
+          @media #{$minLarge} {
+            font-size: 11px;
+          }
+        }
+      }
+}
+/*=-=-=-=-=-=-=-=-=-=-=-=- End Relative Box -=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=- Start Header -=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+header {
+  @media #{$minSmall} {
+    position: fixed;
+    z-index: 999;
+    background: #FFF;
+    width: 100%;
+    top: 0;
+  }
+
+  @media #{$minMedium} {
+    position: unset;
+    z-index: unset;
+    background: unset;
+    width: unset;
+  }
+
+  @media #{$minLarge} {
+    position: unset;
+    z-index: unset;
+    background: unset;
+    width: unset;
+  }
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 40px;
+
+  .collection-left__lists {
+    display: flex;
+
+    @media #{$minSmall} {
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: -40px;
+      left: -1030px;
+      z-index: 9999;
+      font-size: 40px;
+      line-height: 120px;
+      text-transform: uppercase;
+      background: $podyBackground;
+      padding-block-start: 80px;
+      padding-inline-start: 50px;
+      letter-spacing: 5px;
+      transition: 1s all;
+    }
+
+    @media #{$minMedium} {
+      text-transform: capitalize;
+      width: auto;
+      display: flex;
+      position: unset;
+      flex-direction: unset;
+      height: auto;
+      font-size: unset;
+      padding: unset;
+      letter-spacing: 1px;
+      line-height: unset;
+    }
+
+    .lists__item {
+      padding-inline: 10px;
+    }
+  }
+
+  .header__headding {
+    letter-spacing: 5px;
+
+    .headding__link {
+      color: #000;
+      text-decoration: none;
+
+      @media #{$minSmall} {
+        font-size: 60px;
+      }
+
+      @media #{$minMedium} {
+        font-size: 30px;
+      }
+
+      @media #{$minLarge} {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .collection-right__list {
+    @extend .collection-left__lists;
+
+    @media #{$minSmall} {
+      flex-direction: column;
+      position: fixed;
+      left: -1030px;
+      top: 360px;
+      z-index: 9999;
+      font-size: 40px;
+      line-height: 120px;
+      background: $podyBackground;
+      width: 100%;
+      height: 100vh;
+      padding-block-start: 80px;
+      padding-inline-start: 50px;
+    }
+
+    @media #{$minMedium} {
+      text-transform: capitalize;
+      width: auto;
+      display: flex;
+      position: unset;
+      flex-direction: unset;
+      height: auto;
+      font-size: unset;
+      padding: unset;
+      letter-spacing: 1px;
+      line-height: unset;
+    }
+
+    .list_item {
+      @extend .lists__item;
+    }
+  }
+}
+
+#item__link {
+  text-decoration: none;
+  color: $mainColor;
+  &:hover {
+    color: #707070;
+  }
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=- End Header -=-=-=-=-=-=-=-=-=-=-=-=-=-=*/

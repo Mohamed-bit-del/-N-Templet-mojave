@@ -1,0 +1,179 @@
+@import 'sass/healper/varibles';
+@import 'sass/healper/mixins';
+@import 'sass/layout/header';
+@import 'sass/companenets/button';
+
+@import 'sass/layout/grid';
+@import 'sass/pages/gloplepages';
+@import 'sass/pages/home';
+@import 'sass/pages/ourImpact';
+@import 'sass/pages/ourteam';
+@import 'sass/pages/volunteer';
+@import 'sass/pages/donate';
+@import 'sass/pages/contact-us';
+
+@import 'sass/layout/footer';
+
+
+
+// $mainColor: #F00;
+// $mainfontSize: 16px;
+// $direction: ltr;
+// $floatLeft: left;
+// $floatRight: right;
+
+// @if $direction == ltr {
+//     $floatLeft: left;
+//     $floatRight: right;
+// } @else {
+//     $floatLeft: right;
+//     $floatRight: right;
+// }
+
+// // @import "mido";
+
+// * {
+//     -webkit-box-sizing:border-box;
+//     -moz-box-sizing:border-box;
+//     -o-box-sizing:border-box;
+//     box-sizing:border-box;
+// }
+
+
+
+// /*Start Fotter*/
+
+// .foter{
+//     background-image: url(../Images/Desert%204.png);
+//     background-size:cover;
+//     width:98%;
+//     height: 700px;
+//     margin-left: 13px
+// }
+
+
+// .foter article {
+//     color:#FFF;
+//     text-transform: uppercase;
+//     padding-top:115px;
+// }
+
+// .foter h3 {
+//     color:#FFF;
+//     font-size:90px;
+//     margin-top:auto;
+//     margin-bottom:auto;
+//     padding-top: 25px
+// }
+
+// .foter div {
+//     text-align: center;
+//     padding-top:-10px;
+//     color:#FFF;
+//     font-size:50px
+// }
+
+// input[name="join today"] {
+//   @extend %input
+// }
+
+// input[name="join today"]:hover {
+//     color:#000;
+//     background-color:#FFF;
+//     cursor:pointer;
+//     transition: all .5s
+// }
+
+// input[name="donaty today"] {
+//    @extend %input
+// }
+
+// input[name="donaty today"]:hover {
+//     color:#000;
+//     background-color:#FFF;
+//     cursor:pointer;
+//     transition: all .5s
+// }
+
+// .foter article , h3 , input[name="join today"] , input[name="donaty today"] {
+// /*    margin-left:650px;*/
+//     text-align:center;
+// }
+
+// footer {
+//     text-align: center
+// }
+
+// footer ul {
+//     list-style:none;
+//     padding-left:0;
+//     margin:0 ;
+//     text-align:center;
+//     margin-top:100px;
+//     padding-bottom: 50px
+// }
+
+// footer ul li {
+//     display:inline-block;
+//     padding:5px;
+//     font-size: 25px
+// }
+
+// footer ul li i {
+//     color:#363232;
+// }
+
+// footer ol {
+//     list-style: none;
+//     margin-bottom: 50px
+// }
+
+// footer ol li {
+//     display:inline-block;
+//     padding-right: 10px;
+// }
+
+// footer ol li:hover {
+//     cursor:pointer;
+//     color:#b1b1b1;
+//     transition: all .3s
+// }
+
+// footer p {
+//     color:#000;
+//     font-size:20px
+// }
+
+// footer p span {
+//     cursor:pointer;
+//     color: $mainColor;
+//     transition: all .3s
+// }
+
+// /*End Fotter*/
+
+// /* Classes To Extend */
+
+// %input {
+//     margin-left:630px;
+//     padding:25px 60px;
+//     text-transform: uppercase;
+//     font-size:15px;
+//     color:#FFF;
+//     background-color: #0000000b;
+//     border: 2px solid #FFF;
+//     border-radius: 3px;
+//     margin-top:20px;
+//     outline: 0;
+// }
+
+// .mido {
+//     @extend .foter;
+//     @extend .heade;
+//     font-size: 40px;
+//     @import "th"; 
+// }
+
+// .taha {
+//     @extend .mido;
+// }

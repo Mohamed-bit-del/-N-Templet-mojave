@@ -1,0 +1,81 @@
+
+%input {
+  width: 70%;
+  padding-block: 30px;
+  font-size: small;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: $logoColor;
+  background-color: #0000000b;
+  border-radius: 3px;
+  border: 2px solid $logoColor;
+  outline: 0;
+    &:hover {
+      color:$mainColor;
+      background-color:$logoColor;
+      cursor:pointer;
+      @extend %transition;
+    }
+}
+
+.mobile {
+  position: absolute;
+  right: 10px;
+  width: 0;
+  height: 100%;
+  background: #FFF;
+
+  @media #{$maxSmall} {
+    display: block;
+  }
+
+  @media #{$minMedium} {
+    display: none;
+  }
+
+  .screen__btn {
+    display: block;
+    background: #000;
+    width: 80px;
+    height: 9px;
+    &:not(:last-of-type) {
+      margin-block: 10px;
+    }
+  }
+}
+  
+.mobil__close {
+  background: #000;
+  color: #FFF;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  z-index: 99999999;
+  font-size: 70px;
+  text-align: center;
+  text-decoration: none;
+  padding-block: 30px;
+  padding-inline: 30px; 
+}
+
+%btn {
+  width: 20%;
+  height: 50px;
+  outline: none;
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: $headinColor;
+  background: $podyBackground;
+  border-radius: 3px;
+  border: 2px solid $headinColor;
+  cursor: pointer;
+@include prefixis(transition, 1s all, mos webkit o xs);
+
+  &:hover {
+    background: $headinColor;
+    color: $logoColor;
+  }
+}
