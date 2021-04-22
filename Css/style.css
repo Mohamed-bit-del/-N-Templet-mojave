@@ -302,7 +302,7 @@ ul, ol {
 
 /* Start the first page home /Main/ */
 .image__logo-text {
-  background-image: url(../../../Images/Desert\ 1.png); }
+  background-image: url(../Images/Desert\ 1.png); }
 @media (min-width: 768px) {
   .image__logo-text {
     height: 1500px;
@@ -352,7 +352,7 @@ ul, ol {
     font-size: 25px; } }
 .main .main__history .history__logo {
   /* Logo Main */
-  background-image: url(../../../Images/Desert\ 2.png);
+  background-image: url(../Images/Desert\ 2.png);
   height: 800px; }
 @media (min-width: 768px) {
   .main .main__history .history__logo {
@@ -382,7 +382,7 @@ ul, ol {
 .main .main__history .history__text {
   padding-block: 150px; }
 .main .main__image {
-  background-image: url(../../../Images/Desert\ 3.png);
+  background-image: url(../Images/Desert\ 3.png);
   height: 800px; }
 @media (min-width: 768px) {
   .main .main__image {
@@ -437,7 +437,7 @@ ul, ol {
 
 /*=-=-=-=-=-=-=-=-=-=-=- Start Main our impact -=-=-=-=-=-=-=-=-=-=*/
 .our-impact-logo {
-  background-image: url(../../../Images/Desert\ 3.png); }
+  background-image: url(../Images/Desert\ 3.png); }
 @media (min-width: 768px) {
   .our-impact-logo {
     background-position: 50%; } }
