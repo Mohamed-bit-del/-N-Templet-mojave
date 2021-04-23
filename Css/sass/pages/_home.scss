@@ -1,7 +1,7 @@
 /* Start the first page home /Main/ */
 
 .image__logo-text {
-  background-image: url(../../../Images/Desert\ 1.png);
+  background-image: url(../Images/Desert\ 1.png);
   @extend %imageCode;
 
   @media #{$minSmall} {
@@ -94,7 +94,7 @@
     .main__history {
   
       .history__logo { /* Logo Main */
-        background-image: url(../../../Images/Desert\ 2.png);
+        background-image: url(../Images/Desert\ 2.png);
         @extend %imageCode;
         height:800px;
 
@@ -150,7 +150,7 @@
     }
   
     .main__image {
-      background-image: url(../../../Images/Desert\ 3.png);
+      background-image: url(../Images/Desert\ 3.png);
       // background-position: 100% 100%;
       @extend %imageCode;
       height: 800px;
