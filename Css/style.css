@@ -559,7 +559,7 @@ ul, ol {
   margin-inline-end: 5px; }
 .image__groub .groub-image-two {
   display: flex; }
-.image__groub .groub-image-two :nth-child(4) {
+.image__groub .groub-image-two :nth-child(2) {
   margin-inline: 3px; }
 .image__groub .groub-image-two img {
   max-width: 33.3333%;
