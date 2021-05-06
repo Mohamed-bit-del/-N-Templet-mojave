@@ -1,4 +1,3 @@
-
 %input {
   width: 70%;
   padding-block: 30px;
@@ -10,22 +9,28 @@
   border-radius: 3px;
   border: 2px solid $logoColor;
   outline: 0;
-    &:hover {
-      color:$mainColor;
-      background-color:$logoColor;
-      cursor:pointer;
-      @extend %transition;
-    }
+
+  &:hover {
+    color: $mainColor;
+    background-color: $logoColor;
+    cursor: pointer;
+    @extend %transition;
+  }
 }
 
 .mobile {
   position: absolute;
-  right: 10px;
+  top: 20%;
+  right: 70px;
   width: 0;
   height: 100%;
   background: #FFF;
 
-  @media #{$maxSmall} {
+  @media #{$maxMobile} {
+    display: block;
+  }
+
+  @media #{$minSmall} {
     display: block;
   }
 
@@ -36,17 +41,18 @@
   .screen__btn {
     display: block;
     background: #000;
-    width: 80px;
+    width: 60px;
     height: 9px;
+
     &:not(:last-of-type) {
-      margin-block: 10px;
+      margin-block: 5px;
     }
   }
 }
-  
+
 .mobil__close {
-  background: #000;
-  color: #FFF;
+  background: $linkColor;
+  color: $logoColor;
   width: 100px;
   height: 100px;
   position: fixed;
@@ -56,26 +62,40 @@
   font-size: 70px;
   text-align: center;
   text-decoration: none;
-  padding-block: 30px;
-  padding-inline: 30px; 
+  padding-block: 20px;
+  padding-inline: 20px;
+  transition: 1s all;
+
+  @media #{$maxMobile} {
+    display: block;
+  }
+
+  @media #{$minSmall} {
+    display: block;
+  }
+
+  @media #{$minMedium} {
+    display: none;
+  }
 }
 
 %btn {
-  width: 20%;
+  width: 150px;
   height: 50px;
   outline: none;
   font-size: 20px;
-  font-weight: bolder;
+  font-weight: bolde;
   letter-spacing: 2px;
   color: $headinColor;
   background: $podyBackground;
   border-radius: 3px;
   border: 2px solid $headinColor;
   cursor: pointer;
-@include prefixis(transition, 1s all, mos webkit o xs);
+  @include prefixis(transition, 1s all, mos webkit o xs);
 
   &:hover {
     background: $headinColor;
     color: $logoColor;
   }
+
 }

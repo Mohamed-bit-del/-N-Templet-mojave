@@ -1,200 +1,246 @@
 /* Start the first page home /Main/ */
 
 .image__logo-text {
+  height: 690px;
   background-image: url(../Images/Desert\ 1.png);
   @extend %imageCode;
 
+  @media #{$maxMobile} {
+    // min-height: 1500px;
+    background-position: 50% 20px;
+  }
+
   @media #{$minSmall} {
-    height: 1500px;
+
     background-position: 50% 20px;
   }
 
   @media #{$minMedium} {
-    height: 600px;
-   
+    // min-height: 600px;
   }
 
   @media #{$minLarge} {
-    height: 600px;
     background-position: 70% 40%;
   }
-  
-  .logo-text__headding {
+
+  .overly {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 19, 17, .5);
+
+    .layout-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .logo-text__headding {
+        @extend %pragragheImage;
+        letter-spacing: -2.1px;
+      }
+    }
+  }
+
+  .logo__title {
     @extend %pragragheImage;
-    letter-spacing: -2.1px;
+  }
+
+  .logo__small-title {
+    font-size: 20px;
+    color: $logoColor;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, 500px);
+
+    // @media #{$minSmall} {
+    //   top: 73%;
+    //   left: 35%;
+    // }
+
+    // @media #{$minMedium} {
+    //   top: 73%;
+    //   left: 35%;
+    // }
+
+    // @media #{$minLarge} {
+    //   top: 65%;
+    //   left: 40%;
+    // }
   }
 }
 
 .main {
   margin-block-start: 150px;
-  
-    .main__home {
-      // @extend %widthTextMain;
-      
-      .home__title {
-        margin-block-end: 100px;
-      
-        .title__hedding {
+
+  .main__home {
+    // @extend %widthTextMain;
+
+    .home__title {
+      margin-block-end: 100px;
+
+      .title__hedding {
         @extend %color-font-headding;
-        }
-        
-        .title__text {
-          @extend %stylePragraghe;
-        }
+      }
+
+      .title__text {
+        @extend %stylePragraghe;
       }
     }
-  
-  
-    .home__row {
-      display: flex;
-      line-height: 35px;
-      margin-block-end: 150px;
-  
-      .row__text {
-        width: calc(100% / 4);
-        position: relative;
-        &:not(:last-of-type) {
-          margin-inline-end: 20px;
-        }
-  
-        .text__number {
-          color: $headinColor;
-        }
-        
-        .text__slash {
-          position: absolute;
-          left: 0;
-          top: 45px;
-          width: 8px;
-          height: 1px;
-          background: $headinColor;
-        }
-        
-        .text__pragraghe {
-          color: $textColor;
-          
-          @media #{$minSmall} {
-            // width: auto;
-            font-size: 35px;
-          }
+  }
 
-          @media #{$minMedium} {
-            // width: 80%;
-            font-size: 25px;
-          }
 
-          @media #{$minLarge} {
-            // width: 90%;
-            font-size: 25px;
-          }
-        }
+  .home__row {
+    display: flex;
+    line-height: 1.5;
+    margin-block-end: 150px;
+
+    .row__text {
+      width: calc(100% / 4);
+      position: relative;
+
+      &:not(:last-of-type) {
+        margin-inline-end: 20px;
+      }
+
+      .text__number {
+        color: $headinColor;
+      }
+
+      .text__slash {
+        position: absolute;
+        left: 0;
+        top: 45px;
+        width: 8px;
+        height: 1px;
+        background: $headinColor;
+      }
+
+      .text__pragraghe {
+        color: $textColor;
+        font-size: 20px;
+
+        // @media #{$minSmall} {
+        //   // width: auto;
+        //   font-size: 35px;
+        // }
+
+        // @media #{$minMedium} {
+        //   // width: 80%;
+        //   font-size: 25px;
+        // }
+
+        // @media #{$minLarge} {
+        //   // width: 90%;
+        //   font-size: 20px;
+        // }
       }
     }
-  
-    .main__history {
-  
-      .history__logo { /* Logo Main */
-        background-image: url(../Images/Desert\ 2.png);
-        @extend %imageCode;
-        height:800px;
+  }
 
-        @media #{$minSmall} {
-          background-position: 45% 170px;
-        }
-      
-        @media #{$minMedium} {
-          background-position: 100% 100%;
-        }
-      
-        @media #{$minLarge} {
-         background-position: 100% 100%;
-        }
-        .logo__title {
-        @extend %pragragheImage;
-        }
-        
-        .logo__small-title {
-          font-size: 20px;
-          color: $logoColor;
-          position: absolute;
+  .main__history {
 
-          @media #{$minSmall} {
-            top: 73%;
-            left: 35%;
-          }
-
-          @media #{$minMedium} {
-            top: 73%;
-            left: 35%;
-          }
-
-          @media #{$minLarge} {
-            top: 65%;
-            left: 40%;
-          }
-        }
-      }
-  
-      .history__text {
-        // @extend %widthTextMain;
-        padding-block: 150px;
-      
-        .history__headin {
-          @extend %color-font-headding;
-        }
-        
-        .text__pragrghe {
-          @extend %stylePragraghe;
-        }
-      }
-    }
-  
-    .main__image {
-      background-image: url(../Images/Desert\ 3.png);
-      // background-position: 100% 100%;
+    .history__logo {
+      /* Logo Main */
+      background-image: url(../Images/Desert\ 2.png);
       @extend %imageCode;
       height: 800px;
 
       @media #{$minSmall} {
-        background-position: 50% 230px;
+        background-position: 45% 170px;
       }
-    
+
       @media #{$minMedium} {
         background-position: 100% 100%;
       }
-    
+
       @media #{$minLarge} {
-       background-position: 100% 100%;
+        background-position: 100% 100%;
       }
-  
-      .control {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        line-height: 50px;
-      
-        .control__text {
-          color: $logoColor;
-          position: relative;
-          top: 30px;
-        }
-        
-        .control__headin {
-          color: $logoColor;
-          font-size: 80px;
-        }
-        
-        .join-today {
-          @extend %input
-        }
-        
-        .donaty-today {
-          @extend %input;
-        }
+
+      // .logo__title {
+      // @extend %pragragheImage;
+      // }
+
+      // .logo__small-title {
+      //   font-size: 20px;
+      //   color: $logoColor;
+      //   position: absolute;
+
+      // @media #{$minSmall} {
+      //   top: 73%;
+      //   left: 35%;
+      // }
+
+      // @media #{$minMedium} {
+      //   top: 73%;
+      //   left: 35%;
+      // }
+
+      // @media #{$minLarge} {
+      //   top: 65%;
+      //   left: 40%;
+      // }
+      // }
+    }
+
+    .history__text {
+      // @extend %widthTextMain;
+      padding-block: 150px;
+
+      .history__headin {
+        @extend %color-font-headding;
+      }
+
+      .text__pragrghe {
+        @extend %stylePragraghe;
       }
     }
+  }
+
+  .main__image {
+    background-image: url(../Images/Desert\ 3.png);
+    @extend %imageCode;
+    min-height: 650px;
+
+    @media #{$minSmall} {
+      background-position: 50% 230px;
+    }
+
+    @media #{$minMedium} {
+      background-position: 100% 100%;
+    }
+
+    @media #{$minLarge} {
+      background-position: 100% 100%;
+    }
+
+    .control {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      line-height: 50px;
+
+      .control__text {
+        color: $logoColor;
+        position: relative;
+        top: 30px;
+      }
+
+      .control__headin {
+        color: $logoColor;
+        font-size: 80px;
+      }
+
+      .join-today {
+        @extend %input
+      }
+
+      .donaty-today {
+        @extend %input;
+      }
+    }
+  }
 }
 
 
@@ -206,7 +252,7 @@
 //   @media #{$minSmall} {
 //     width: auto;
 //   }
-  
+
 //   @media #{$minMedium} {
 //     width: 75%;
 //   }
@@ -218,36 +264,46 @@
 
 %color-font-headding {
   color: $headinColor;
+  font-size: 50px;
 
-  @media #{$minSmall} {
-    font-size: 80px;
-  }
+  // @media #{$maxMobile} {
+  //   font-size: 50px;
+  // }
 
-  @media #{$minMedium} {
-    font-size: 60px;
-  }
+  // @media #{$minSmall} {
+  //   font-size: 50px;
+  // }
 
-  @media #{$minLarge} {
-    font-size: 40px;
-  }
+  // @media #{$minMedium} {
+  //   font-size: 50px;
+  // }
+
+  // @media #{$minLarge} {
+  //   font-size: 50px;
+  // }
 }
 
 %stylePragraghe {
   line-height: 1.5;
   color: $textColor;
   letter-spacing: 1.5px;
+  font-size: 20px;
 
-  @media #{$minSmall} {
-    font-size: 35px;
+  @media #{$maxMobile} {
+    font-size: 22px;
   }
 
-  @media #{$minMedium} {
-    font-size: 25px;
-  }
+  // @media #{$minSmall} {
+  //   font-size: 35px;
+  // }
 
-  @media #{$minLarge} {
-    font-size: 25px;
-  }
+  // @media #{$minMedium} {
+  //   font-size: 25px;
+  // }
+
+  // @media #{$minLarge} {
+  //   font-size: 20px;
+  // }
 }
 
 

@@ -1,29 +1,49 @@
 /* Start Footer */
 .footer {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding-block: 40px;
-  line-height: 2;
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+  font-size: 23px;
+  line-height: 2;  
 
-  @media #{$minLarge} {
-    font-size: unset;
-  }
-
-  @media #{$minMedium} {
-    font-size: unset;
+  @media #{$maxMobile} {
+    padding-block-end: 100px;
   }
 
   @media #{$minSmall} {
-    font-size: 23px;
+    padding-block-end: 100px;
   }
+
+  // @media #{$minLarge} {
+  //   font-size: unset;
+  // }
+
+  // @media #{$minMedium} {
+  //   font-size: unset;
+  // }
+
+  // @media #{$minSmall} {
+  //   font-size: 23px;
+  // }
   
   .footer__collection {
     display: flex;
 
+    @media #{$maxMobile} {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .collection__item {
       padding-inline: 10px;
+
+      @media #{$minSmall} {
+        padding-inline: 8px;
+      }
       
       .scoil__link {
         color: $linkColor;

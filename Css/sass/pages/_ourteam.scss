@@ -2,7 +2,19 @@
 .our-team {
   .team__person-one {
     @extend %groub-image-title;
-    
+
+    @media #{$maxMobile} {
+      .person-one__logo {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    @media #{$maxMobile} {
+      flex-direction: column;
+      text-align: center;
+    }
 
     @media #{$minSmall} {
       flex-direction: column;
@@ -14,26 +26,39 @@
       text-align: left;
     }
 
-      .person-one__title {
-        @extend %groub-title;
+    .person-one__title {
+      @extend %groub-title;
 
-        .title__name {
-          @extend %title-name;
-        }
+      .title__name {
+        @extend %title-name;
+      }
 
-        .title__headding {
-          @extend %title__headding;
-        }
+      .title__headding {
+        @extend %title__headding;
+      }
 
-        .title__text {
-          @extend %title__text;
-        }
+      .title__text {
+        @extend %stylePragraghe;
+      }
     }
   }
 
   .team__person-two {
     @extend %groub-image-title;
-    
+
+    @media #{$maxMobile} {
+      .person-two__logo {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    @media #{$maxMobile} {
+      flex-direction: column;
+      text-align: center;
+    }
+
     @media #{$minSmall} {
       flex-direction: column;
       text-align: center;
@@ -44,27 +69,44 @@
       text-align: right;
     }
 
-      .person-two__title {
-        @extend %groub-title;
-        direction: rtl;
+    .person-two__title {
+      @extend %groub-title;
+      direction: rtl;
 
-        .title__name {
-          @extend %title-name;
-        }
+      @media #{$minMedium} {
+        direction: ltr;
+      }
 
-        .title__headding {
-          @extend %title__headding;
-        }
+      .title__name {
+        @extend %title-name;
+      }
 
-        .title__text {
-          @extend %title__text;
-        }
+      .title__headding {
+        @extend %title__headding;
+      }
+
+      .title__text {
+        @extend %stylePragraghe;
+      }
     }
   }
 
   .team__person-three {
     @extend %groub-image-title;
-   
+
+    @media #{$maxMobile} {
+      .person-three__logo {
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    @media #{$maxMobile} {
+      flex-direction: column;
+      text-align: center;
+    }
+
     @media #{$minSmall} {
       flex-direction: column;
       text-align: center;
@@ -75,32 +117,37 @@
       text-align: left;
     }
 
-      .person-three__title {
-        @extend %groub-title;
+    .person-three__title {
+      @extend %groub-title;
 
-        .title__name {
-          @extend %title-name;
-        }
+      .title__name {
+        @extend %title-name;
+      }
 
-        .title__headding {
-          @extend %title__headding;
-        }
+      .title__headding {
+        @extend %title__headding;
+      }
 
-        .title__text {
-          @extend %title__text;
-        }
+      .title__text {
+        @extend %stylePragraghe;
+      }
     }
   }
 }
+
 /*=-=-=-=-=-=-=-=-=-=-=- End Main Our Team -=-=-=-=-=-=-=-=-=-=*/
 
 /*=-=-=-=-=-=-=-=-=-=-=- Mailte Coding -=-=-=-=-=-=-=-=-=-=-=-=*/
 %groub-image-title {
   display: flex;
-  
 
-  @media #{$minSmall} {
-    margin-block: 250px;
+
+  // @media #{$minSmall} {
+  //   margin-block: 250px;
+  // }
+
+  @media #{$minMedium} {
+    margin-block: 50px;
   }
 
   @media #{$minLarge} {
@@ -109,9 +156,9 @@
 }
 
 %groub-title {
-  padding-inline: 50px;
+  padding-inline: 20px;
   line-height: 1.5;
-  
+
 
   @media #{$minSmall} {
     transform: unset;
@@ -124,48 +171,50 @@
 
 %title-name {
   color: $headinColor;
+  font-size: 40px;
 
-  @media #{$minSmall} {
-    font-size: 100px;
-  }
+  // @media #{$minSmall} {
+  //   font-size: 100px;
+  // }
 
-  @media #{$minMedium} {
-    font-size: 60px;
-  }
+  // @media #{$minMedium} {
+  //   font-size: 60px;
+  // }
 
-  @media #{$minLarge} {
-    font-size: 40px;
-  }
+  // @media #{$minLarge} {
+  //   font-size: 40px;
+  // }
 }
 
 %title__headding {
   color: $textOurImpact;
+  font-size: 30px;
 
-  @media #{$minSmall} {
-    font-size: 80px;
-  }
+  // @media #{$minSmall} {
+  //   font-size: 80px;
+  // }
 
-  @media #{$minMedium} {
-    font-size: 40px;
-  }
+  // @media #{$minMedium} {
+  //   font-size: 40px;
+  // }
 
-  @media #{$minLarge} {
-    font-size: 30px;
-  }
+  // @media #{$minLarge} {
+  //   font-size: 30px;
+  // }
 }
 
-%title__text {
-  color: $textColor;
+// %title__text {
+//   color: $textColor;
 
-  @media #{$minSmall} {
-    font-size: 40px;
-  }
+//   @media #{$minSmall} {
+//     font-size: 40px;
+//   }
 
-  @media #{$minMedium} {
-    font-size: 30px;
-  }
+//   @media #{$minMedium} {
+//     font-size: 30px;
+//   }
 
-  @media #{$minLarge} {
-    font-size: 18px;
-  }
-}
+//   @media #{$minLarge} {
+//     font-size: 18px;
+//   }
+// }

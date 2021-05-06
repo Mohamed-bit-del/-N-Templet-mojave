@@ -3,7 +3,7 @@
 }
 
 .form__number {
-  @extend %input-form ;
+  @extend %input-form;
   width: 10%;
   height: 40px;
   margin-inline-end: 10px;
