@@ -89,29 +89,45 @@
 
 
   .home__row {
-    display: flex;
     line-height: 1.5;
     margin-block-end: 150px;
 
+    @media #{$maxMobile} {
+      text-align: center;
+    }
+
+    @media #{$minSmall} {
+      text-align: center;
+    }
+
+    @media #{$minMedium} {
+      display: flex;
+    }
+
     .row__text {
-      width: calc(100% / 4);
       position: relative;
 
-      &:not(:last-of-type) {
-        margin-inline-end: 20px;
+      @media #{$minLarge} {
+        width: calc(100% / 4);
+        position: relative;
+
+        &:not(:last-of-type) {
+          margin-inline-end: 20px;
+        }
       }
 
       .text__number {
         color: $headinColor;
       }
 
-      .text__slash {
+      .text__slash:after {
+        content: '';
         position: absolute;
-        left: 0;
-        top: 45px;
-        width: 8px;
-        height: 1px;
+        top: 40px;
+        width: 25px;
+        height: 2px;
         background: $headinColor;
+        margin-inline-start: -25px;
       }
 
       .text__pragraghe {

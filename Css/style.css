@@ -254,6 +254,7 @@
 
 .container {
   margin: auto;
+  width: 1230px;
   position: relative;
   padding-inline: 15px; }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -373,23 +374,35 @@ ul, ol {
 .main .main__home .home__title {
   margin-block-end: 100px; }
 .main .home__row {
-  display: flex;
   line-height: 1.5;
   margin-block-end: 150px; }
+@media (max-width: 767px) {
+  .main .home__row {
+    text-align: center; } }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main .home__row {
+    text-align: center; } }
+@media (min-width: 992px) {
+  .main .home__row {
+    display: flex; } }
 .main .home__row .row__text {
-  width: calc(100% / 4);
   position: relative; }
-.main .home__row .row__text:not(:last-of-type) {
-  margin-inline-end: 20px; }
+@media (min-width: 1200px) {
+  .main .home__row .row__text {
+    width: calc(100% / 4);
+    position: relative; }
+  .main .home__row .row__text:not(:last-of-type) {
+    margin-inline-end: 20px; } }
 .main .home__row .row__text .text__number {
   color: #525252; }
-.main .home__row .row__text .text__slash {
+.main .home__row .row__text .text__slash:after {
+  content: '';
   position: absolute;
-  left: 0;
-  top: 45px;
-  width: 8px;
-  height: 1px;
-  background: #525252; }
+  top: 40px;
+  width: 25px;
+  height: 2px;
+  background: #525252;
+  margin-inline-start: -25px; }
 .main .home__row .row__text .text__pragraghe {
   color: #cdcdcd;
   font-size: 20px; }

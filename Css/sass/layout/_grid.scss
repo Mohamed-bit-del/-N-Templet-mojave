@@ -1,5 +1,6 @@
 .container {
   margin: auto;
+  width: 1230px;
   position: relative;
   padding-inline: 15px;
 
@@ -30,7 +31,6 @@
 .container-image {
   width: 98%;
   margin: auto;
-
 }
 
 .header__aggen {
@@ -49,17 +49,13 @@
 %pragragheImage {
   position: absolute;
   top: 50%;
-  // left: 50%;
-  // margin: auto;
   color: $logoColor;
   text-align: center;
   font-weight: bolder;
   margin-block-start: 150px;
-  // transform: translate(-50%, -50%);
 
   @media #{$maxMobile} {
     font-size: 80px;
-
     margin-block-start: 75px;
   }
 
