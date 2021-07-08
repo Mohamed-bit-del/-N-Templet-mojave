@@ -4,7 +4,8 @@
 
 .form__number {
   @extend %input-form;
-  width: 10%;
+  width: 65px;
   height: 40px;
-  margin-inline-end: 10px;
+  margin-inline-end: 5px;
+  text-align: center
 }

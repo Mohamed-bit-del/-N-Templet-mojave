@@ -9,6 +9,9 @@
   border-radius: 3px;
   border: 2px solid $logoColor;
   outline: 0;
+  text-decoration: none;
+  text-align: center;
+  @include prefixis(transition, background-color .5s, webkit moz ms o);
 
   &:hover {
     color: $mainColor;
@@ -20,15 +23,9 @@
 
 .mobile {
   position: absolute;
-  top: 20%;
-  right: 70px;
-  width: 0;
-  height: 100%;
-  background: #FFF;
-
-  @media #{$maxMobile} {
-    display: block;
-  }
+  top: 40%;
+  right: 5%;
+  background: $logoColor;
 
   @media #{$minSmall} {
     display: block;
@@ -38,43 +35,49 @@
     display: none;
   }
 
-  .screen__btn {
-    display: block;
-    background: #000;
-    width: 60px;
-    height: 9px;
+  &__screen {
+    height: auto;
+    width: auto;
+    display: inline-block;
+    
+    &--btn {
+      display: block;
+      background: #000;
+      width: 30px;
+      height: 3px;
 
-    &:not(:last-of-type) {
-      margin-block: 5px;
+      &:not(:last-of-type) {
+        margin-block: 5px;
+      }
     }
   }
 }
 
-.mobil__close {
+.mobil-close {
   background: $linkColor;
   color: $logoColor;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   position: fixed;
   top: 0;
   left: -300px;
   z-index: 99999999;
-  font-size: 70px;
+  font-size: 40px;
   text-align: center;
   text-decoration: none;
-  padding-block: 20px;
-  padding-inline: 20px;
+  padding-block: 10px;
+  padding-inline: 10px;
   transition: 1s all;
-
-  @media #{$maxMobile} {
-    display: block;
-  }
 
   @media #{$minSmall} {
     display: block;
   }
 
   @media #{$minMedium} {
+    display: none;
+  }
+
+  @media #{$minLarge} {
     display: none;
   }
 }
@@ -84,7 +87,8 @@
   height: 50px;
   outline: none;
   font-size: 20px;
-  font-weight: bolde;
+  font-weight: bold;
+  text-align: center;
   letter-spacing: 2px;
   color: $headinColor;
   background: $podyBackground;
@@ -96,6 +100,10 @@
   &:hover {
     background: $headinColor;
     color: $logoColor;
+  }
+
+  @media #{$maxMobile} {
+    width: 100%;
   }
 
 }

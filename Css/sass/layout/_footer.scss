@@ -6,30 +6,29 @@
   justify-content: center;
   padding-block-start: 40px;
   padding-block-end: 40px;
-  font-size: 23px;
   line-height: 2;  
 
   @media #{$maxMobile} {
-    padding-block-end: 100px;
+    padding-block-end: 90px;
   }
 
   @media #{$minSmall} {
-    padding-block-end: 100px;
+    padding-block-end: 90px;
   }
 
-  // @media #{$minLarge} {
-  //   font-size: unset;
-  // }
-
-  // @media #{$minMedium} {
-  //   font-size: unset;
-  // }
-
-  // @media #{$minSmall} {
-  //   font-size: 23px;
-  // }
+  @media #{$minMedium} {
+    padding-block-end: 90px;
+  }
   
-  .footer__collection {
+  @media #{$maxMobile} {
+    .footer__collection.socil {
+      flex-direction: unset;
+      margin-block-end: 30px;
+    }
+
+  }
+
+  &__collection {
     display: flex;
 
     @media #{$maxMobile} {
@@ -38,29 +37,30 @@
       justify-content: center;
     }
 
-    .collection__item {
-      padding-inline: 10px;
+    &--item {
+      padding-inline: 5px;
 
       @media #{$minSmall} {
         padding-inline: 8px;
       }
-      
-      .scoil__link {
-        color: $linkColor;
-        font-size: 25px;
-        @extend %transition;
-        &:hover {
-          color: $headinColor;
-        }
-      }
+    }
+    
+    &--link {
 
-      .item__link {
-        text-decoration: none;
+      color: $linkColor;
+      font-size: 18px;
+      @extend %transition;
+      &:hover {
         color: $headinColor;
-        @extend %transition;
-        &:hover {
-          color: $textColor;
-        }
+      }
+    }
+
+    &--link {
+      text-decoration: none;
+      color: $headinColor;
+      @extend %transition;
+      &:hover {
+        color: $textColor;
       }
     }
   }
@@ -68,12 +68,20 @@
     color: $linkColor;
     letter-spacing: 3px;
     text-transform: uppercase;
+
+    @media #{$maxMobile} {
+      text-align: center;
+    }
     
     .copyright__link {
       color: $headinColor;
       @extend %transition;
       &:hover {
         color: $textColor;
+      }
+
+      @media #{$maxMobile} {
+        display: block;
       }
     }
   }

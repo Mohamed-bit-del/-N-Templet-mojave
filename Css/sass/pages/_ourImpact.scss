@@ -1,216 +1,277 @@
 /*=-=-=-=-=-=-=-=-=-=-=- Start Main our impact -=-=-=-=-=-=-=-=-=-=*/
-.our-impact-logo {
-  background-image: url(../Images/Desert\ 3.png);
-  @extend %imageCode;
+.container-image {
 
-  @media #{$minSmall} {
-    background-position: 50%;
-  }
-
-  @media #{$minMedium} {
-    background-position: 50% 100%;
-  }
-
-  @media #{$minLarge} {
-    background-position: 100% 100%;
-  }
+  &--catch {
+      background-image: url(../Images/Desert\ 3.png);
+      @extend %imageCode;
+      height: 708px;
+  
+      @media #{$minSmall} {
+        background-position: 50%;
+      }
+  
+      @media #{$minMedium} {
+        background-position: 50% 100%;
+      }
+  
+      @media #{$minLarge} {
+        background-position: 100% 100%;
+      }
+    }
 }
 
-.our-impact {
+.main {
 
-  .our-impact__headding {
-    font: {
-      size: 50px;
-      weight: bolder;
+  .our-impact {
+
+    &__headding {
+      font: {
+        size: 2em;
+      }
+      
+      color: $headinColor;
+      margin-block-end: 30px;
     }
 
-    color: $headinColor;
+    &__title {
+      @extend %our-impact__title;
 
-    // @media #{$minSmall} {
-    //   font-size: 60px;
-    // }
+      &--hedding {
+        @extend %title__hedding;
+      }
 
-    // @media #{$minMedium} {
-    //   font-size: 50px;
-    // }
-
-    // @media #{$minLarge} {
-    //   font-size: 50px;
-    // }
+      &--text {
+        @extend %stylePragraghe;
+      }
+    }
   }
 
-  .our-impact__title {
-    @extend %our-impact__title;
+  .container-image {
 
-    .title__hedding {
-      @extend %title__hedding;
-    }
-
-    .title__text {
-      @extend %stylePragraghe;
+    .image__logo-text {
+      background-image: url(../Images/Desert\ 5.png);
+      @extend %imageCode;
+      height: 708px;
     }
   }
 }
 
 .graph {
-  margin-block: 150px;
+  margin-block: 50px;
 
 
   .graph-lists {
-    margin-block: 100px;
+    margin-block: 50px;
 
-    @media #{$minSmall} {
-      width: 100%;
-    }
-
-    @media #{$minMedium} {
-      width: 90%;
-      margin: auto;
-    }
-
-    @media #{$minLarge} {
-      width: 100%;
-    }
-
-    .lists__collection {
-      position: relative;
-      margin-block-start: 50px;
-
-      border: {
-        left: 1px solid $borderColor;
-        right: 1px solid $borderColor;
-        top: 1px solid $borderColor;
-      }
-
-      @media #{$maxMobile} {
-        width: 80%;
-        margin: auto;
-      }
-
-      .collection__item-graph:before {
-        content: '';
-        background: $borderColor;
-        width: 1px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 50%;
-      }
-
-      .collection__item-graph {
-        border-bottom: 1px solid $borderColor;
-        padding-block: 20px;
-        color: $headinColor;
-
-        .item-graph__num {
-          position: relative;
-          right: 45px;
-          bottom: 30px;
-        }
-      }
-
-      .collection__num {
-        display: flex;
-        justify-content: space-between;
-        margin-block-start: 10px;
-        color: $headinColor;
+    .--line:before {
+      content: "";
+      background-color: $borderColor;
+      width: 1px;
+      height: 510px;
+      position: absolute;
+      right: 10px;
+      bottom: 0;
+    } 
+      &__collection {
         position: relative;
+        width: 90%;
+        margin: auto;
 
-        .number__outline-one:before {
+        border: {
+          left: 1px solid $borderColor;
+          // right: 1px solid $borderColor;
+          top: 1px solid $borderColor;
+        }
+        
+        @media #{$maxMobile} {
+          width: 80%;
+          margin-left: auto;
+        }
+         
+        &--item {
+          border-bottom: 1px solid $borderColor;
+          padding-block: 10px;
+          color: $headinColor;
+        }
+
+        &--item:before {
+          content: '';
+          background: $borderColor;
+          width: 1px;
+          height: 510px;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+        }
+               
+        &--num {
+          display: flex;
+          justify-content: space-between;
+          margin-block-start: 10px;
+          color: $headinColor;
+          position: relative;
+        }
+        
+      }  
+      // Perant content table
+        &--num {
+          position: relative;
+          right: 35px;
+          bottom: 10px;
+        }
+        // widht column and hover 
+        &--outline-one:before {
           content: '';
           position: absolute;
           background: $graphColor;
           left: 4%;
           bottom: 29px;
-          width: 17%;
-          height: 58px;
-          @include prefixis(transition, 2s all ease-in-out, mos webkit o xs);
+          width: 15%;
+          height: 77px;
+          @include prefixis(transition, .2s all ease-in-out, mos webkit o xs);
         }
-
-        .number__outline-one:hover:before {
+        
+        &--outline-one:hover:before {
           background: $textColor;
-          height: 177px;
         }
-
-        .number__outline-two:before {
+        
+        &--outline-two:before {
           content: '';
           position: absolute;
           background: $graphColor;
           left: 29%;
           bottom: 29px;
-          width: 17%;
-          height: 58px;
-          @include prefixis(transition, 2s all ease-in-out, mos webkit o xs);
+          width: 15%;
+          height: 194px;
+          @include prefixis(transition, .2s all ease-in-out, mos webkit o xs);
         }
-
-        .number__outline-two:hover:before {
+        
+        &--outline-two:hover:before {
           background: $textColor;
-          height: 294px;
         }
 
-        .number__outline-three:before {
-          content: '';
+      &--outline-three:before {
+        content: '';
+        position: absolute;
+        background: $graphColor;
+        left: 54%;
+        bottom: 29px;
+        width: 15%;
+        height: 312px;
+        @include prefixis(transition, .2s all ease-in-out, mos webkit o xs);
+      }
+
+      &--outline-three:hover:before {
+        background: $textColor;
+      }
+
+      &--outline-four:before {
+        content: '';
+        position: absolute;
+        background: $graphColor;
+        left: 79%;
+        bottom: 29px;
+        width: 15%;
+        height: 429px;
+        @include prefixis(transition, .2s all ease-in-out, mos webkit o xs);
+      }
+
+      &--outline-four:hover:before {
+        background: $textColor;
+      }
+      // line vertical line 
+      &--number-lineOne:before {
+        content: '';
+        position: absolute;
+        background: $borderColor;
+        width: 1px;
+        height: 510px;
+        bottom: 0;
+        left: 25%;
+      }
+
+        &--number-lineTwo:before {
+        content: '';
+        position: absolute;
+        background: $borderColor;
+        width: 1px;
+        height: 510px;
+        bottom: 0;
+        left: 75%;
+      }
+      // hover tooltips
+      .tooltips {
+
+        &__text {
+          opacity: 0;
+          visibility: hidden;
+          background: $tooltipsColor;
+          color: $logoColor;
+          width: 113px;
+          display: block;
           position: absolute;
-          background: $graphColor;
-          left: 54%;
-          bottom: 29px;
-          width: 17%;
-          height: 58px;
-          @include prefixis(transition, 2s all ease-in-out, mos webkit o xs);
-        }
-
-        .number__outline-three:hover:before {
-          background: $textColor;
-          height: 473px;
-        }
-
-        .number__outline-four:before {
-          content: '';
-          position: absolute;
-          background: $graphColor;
-          left: 79%;
-          bottom: 29px;
-          width: 17%;
-          height: 58px;
-          @include prefixis(transition, 2s all ease-in-out, mos webkit o xs);
-        }
-
-        .number__outline-four:hover:before {
-          background: $textColor;
-          height: 767px;
-        }
-
-        .num__number-lineOne:before {
-          content: '';
-          position: absolute;
-          background: $borderColor;
-          width: 1px;
-          height: 973px;
-          bottom: 0;
-          left: 25%;
-        }
-
-        .num__number-lineTwo:before {
-          content: '';
-          position: absolute;
-          background: $borderColor;
-          width: 1px;
-          height: 973px;
-          bottom: 0;
-          left: 75%;
+          text-align: center;
+          border-radius: 5px;
+          padding-block: 5px;
+          @include prefixis(transition, opacity .5, webkit moz ms o);
+   
+          &:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-inline-start: -5px;
+            border: {
+              width: 5px;
+              style: solid;
+              color: $tooltipsColor transparent transparent transparent;
+            }
+          }
         }
       }
-    }
+
+      .graph-lists--outline-one .tooltips__text {
+        left: 5.5%;
+        bottom: 120px;
+      }
+      .graph-lists--outline-one:hover .tooltips__text {
+        opacity: 1;
+        visibility: visible;
+      }
+      .graph-lists--outline-two .tooltips__text {
+        left: 30%;
+        bottom: 234px;
+      }
+      .graph-lists--outline-two:hover .tooltips__text {
+        opacity: 1;
+        visibility: visible;
+      }
+      .graph-lists--outline-three .tooltips__text {    
+        left: 55%;
+        bottom: 352px;
+      }
+      .graph-lists--outline-three:hover .tooltips__text {
+        opacity: 1;
+        visibility: visible;
+      }
+      .graph-lists--outline-four .tooltips__text {
+        left: 80%;
+        bottom: 470px;
+      }
+      .graph-lists--outline-four:hover .tooltips__text {
+        opacity: 1;
+        visibility: visible;
+      }
   }
 
-  .our-impact__title {
+  &__our-impact {
     @extend %our-impact__title;
 
-    .title__hedding {
+    &--heading {
       @extend %title__hedding;
     }
 
-    .title__text {
+    &--text {
       @extend %stylePragraghe;
     }
   }
@@ -221,6 +282,7 @@
 
   .groub-image-one {
     display: flex;
+    justify-content: space-between;
     line-height: 0;
 
     @media #{$maxMobile} {
@@ -228,12 +290,13 @@
     }
 
     img {
-      max-width: 50%;
-      margin-inline-end: 5px;
+      width: 49.8%;
+      max-width: 100%;
+      // margin-inline-end: 5px;
 
       @media #{$maxMobile} {
-        max-width: 100%;
-        margin-block: 3px;
+        width: 100%;
+        margin-block: 2px;
         margin-inline: unset;
       }
     }
@@ -241,32 +304,28 @@
 
   .groub-image-two {
     display: flex;
+    margin-block: 4px;
+    justify-content: space-between;
 
     @media #{$maxMobile} {
       flex-direction: column;
-    }
-
-    :nth-child(2) {
-      margin-inline: 3px;
-
-      @media #{$maxMobile} {
-        margin-inline: unset;
-      }
+      margin-block: 0;
     }
 
     img {
-      max-width: 33.3333%;
-      margin-block: 5px;
+      max-width: 100%;
+      width: 33.1%;
 
       @media #{$maxMobile} {
-        max-width: 100%;
-        margin-block: 3px;
+        width: 100%;
+        margin-block: 2px;
       }
     }
   }
 
   .groub-image-three {
     display: flex;
+    justify-content: space-between;
     line-height: 0;
 
     @media #{$maxMobile} {
@@ -274,12 +333,13 @@
     }
 
     img {
-      max-width: 50%;
-      margin-inline-end: 5px;
+      width: 49.8%;
+      max-width: 100%;
+      // margin-inline-end: 5px;
 
       @media #{$maxMobile} {
-        max-width: 100%;
-        margin-block: 3px;
+        width: 100%;
+        margin-block: 2px;
         margin-inline: unset;
       }
     }
@@ -290,51 +350,19 @@
 
 /*=-=-=-=-=-=-=-=-=-=-=- Start Maulty Codeing -=-=-=-=-=-=-=-=-=-=*/
 %our-impact__title {
-  margin-block: 50px;
+  margin-block-end: 40px;
+  margin-block-start: 30px;
+  padding-block: 10px;
 
   &:last-of-type {
-    margin-block-end: 200px;
+    margin-block-end: 70px;
   }
 
   %title__hedding {
     color: $textOurImpact;
+    font-weight: bolder;
     text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-
-    // @media #{$minSmall} {
-    //   font-size: 35px;
-    // }
-
-    // @media #{$minMedium} {
-    //   font-size: 35px;
-    // }
-
-    // @media #{$minLarge} {
-    //   font-size: 30px;
-    // }
+    letter-spacing: 1px;
+    padding-block-end: 15px;
   }
-
-  // %title__text {
-  //   color: $textColor;
-
-  //   @media #{$minSmall} {
-  //     font-size: 35px;
-  //   }
-
-  //   @media #{$minMedium} {
-  //     font-size: 25px;
-  //   }
-
-  //   @media #{$minLarge} {
-  //     font-size: 25px;
-  //   }
-  // }
 }
-
-// .hover-image-one{
-//   position: absolute;
-//   width: 49%;
-//   height: 604px;
-//   background: rgba(0,0,0,.5);
-// }

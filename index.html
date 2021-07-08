@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Mojave</title>
 <!--        <link rel="shortcut icon" type="image/x-icon" href="https://assets.squarespace.com/universal/default-favicon.ico"/>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/normaliza.css" />
         <link rel="stylesheet" href="Css/style.css" />
@@ -13,179 +14,194 @@
 
     </head>
     <body>
-
         <div class="create-site">
             <a href="#" class="create-site__link">
-                <span class="link__icon"><img src="Images/download.svg" class="link__logo" alt="logo"></span>
-                <div class="link__title">
-                    <span class="title__text-site">Create a Site Like This</span>
-                    <span class="title__small-site">Free trial. Instant access</span>
-                </div>
-             </a>
-        </div>
+                <span class="create-site__link--icon"><img src="Images/download.svg" class="create-site__link--logo" alt="logo"></span>
+                <div class="create-site__link--title">
+                    <span class="create-site__link--text-site">Create a Site Like This</span>
+                    <span class="create-site__link--small-site">Free trial. Instant access</span>
+                </div> <!-- ./create-site__link--title -->
+             </a> <!-- ./create-site__link -->
+        </div> <!-- ./create-site -->
 
         <!--Start Header-->
         <header>
             <div class="container">
                 <div class="mobile">
                     <a href="javascript:void(0)" onclick="openNav()" class="mobile__screen">
-                        <span class="screen__btn"></span>
-                        <span class="screen__btn"></span>
-                        <span class="screen__btn"></span>
-                    </a>
-                </div>
+                        <span class="mobile__screen--btn"></span>
+                        <span class="mobile__screen--btn"></span>
+                        <span class="mobile__screen--btn"></span>
+                    </a> <!-- ./mobile-screen -->
+                </div> <!-- ./mobile -->
                 <div class="header">
                     <div class="navbar">
-                        <div class="header__collection-left">
-                            <a href="javascript:void(0)" onclick="closeNav()" class="mobil__close" id="mobil__close">X</a>
-                            <ul class="collection-left__lists" id="mobile__screen">
-                                <li class="lists__item"><a href="index.html" id="item__link">About Us</a></li>
-                                <li class="lists__item"><a href="our-impact.html" id="item__link">Our Impact</a></li>
-                                <li class="lists__item"><a href="our-team.html" id="item__link">Our Team</a></li>
-                            </ul>
-                        </div>
-                        <h1 class="header__headding"><a href="#" class="headding__link">Mojave</a></h1>
-                        <div class="header__collection-right">
-                            <ul class="collection-right__list" id="mobile">
-                                <li class="list_item"><a href="volunteer.html" id="item__link"> Volunteer</a></li>
-                                <li class="list_item"><a href="donate.html" id="item__link">Donate</a></li>
-                                <li class="list_item"><a href="contact-us.html" id="item__link">Countact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
+                        <div class="navbar__collection-left">
+                            <a href="javascript:void(0)" onclick="closeNav()" class="mobil-close" id="mobil-close">X</a>
+                            <ul class="navbar__collection-left--lists" id="mobile-screen">
+                                <li class="navbar--item"><a href="index.html" class="navbar__link" id="link">About Us</a></li>
+                                <li class="navbar--item"><a href="our-impact.html" class="navbar__link" id="link">Our Impact</a></li>
+                                <li class="navbar--item"><a href="our-team.html" class="navbar__link" id="link">Our Team</a></li>
+                            </ul> <!-- ./navbar__collection-left--lists -->
+                        </div> <!-- ./navbar__collection-left -->
+                        <h1 class="navbar__headding"><a href="#" class="navbar__headding--link">Mojave</a></h1>
+                        <div class="navbar__collection-right">
+                            <ul class="navbar__collection-right--lists" id="mobile">
+                                <li class="navbar--item"><a href="volunteer.html" class="navbar__link" id="link"> Volunteer</a></li>
+                                <li class="navbar--item"><a href="donate.html" class="navbar__link" id="link">Donate</a></li>
+                                <li class="navbar--item"><a href="contact-us.html" class="navbar__link" id="link">Countact Us</a></li>
+                            </ul> <!-- ./navbar__collection-right--lists -->
+                        </div> <!-- ./navbar__collection-right -->
+                    </div> <!-- ./navbar -->
+                </div> <!-- ./header -->
+            </div> <!-- ./container -->
         </header>
         <!--End Header-->
         
         <!--Start Main-->
-        <div class="container-image margin-top-img">
-            <div class="image__logo-text">
+        <div class="container-image">
+            <div class="container-image__logo-text --mg-top">
                 <div class="overly">
-                    <div class="container">
+                    <!-- <div class="container"> -->
                         <div class="layout-text">
-                            <h2 class="logo-text__headding">Dedicated To The Concervation And Care Of The Mojave Desert</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                            <h2 class="logo-text__headding">Dedi­­­­­­­­cated To The Concervation And Care Of The Mojave Desert</h2>
+                        </div> <!-- ./layout-text -->
+                    <!-- </div> ./container -->
+                </div> <!-- ./overly -->
+            </div> <!-- ./container-image__logo-text -->
+        </div> <!-- ./container-image -->
         <section class="main">
             <div class="container">
-                <div class="main__home">
-                    <div class="home__title">
-                        <h2 class="title__hedding">Mission</h2>
-                        <p class="title__text">The Following Text is Placeholder Know asLorem ipsum Which is secrambled Liten Used by Designers to Mimic real Copy.  Lorem ipsum dolor sit amet Nullam vel ultricies Metus, at tincidund arcu. Morbi vestibulum, ligula ut efficitur mollis, mi  massa accumsan justo, accumsan auctor orci lectus ac ipsum. Proin porta nisl sem, ac suscipit lorem dignissim et.  Curabitur euismod nec augue vitae dictum. Nam mattis, massa quis consequat molestie, erat justo vulputate tortor, a  sollicitudin turpis felis eget risus. Aliquam viverra urna felis, eu ornare enim consectetur sed. Morbi vitae ultrices velit. Sed  molestie consectetur metus. Proin neque eros, dapibus ac accumsansodales sit amet velit.  </p>
-                    </div>
+                <div class="main-home">
+                    <div class="main-home__title">
+                        <h2 class="main-home__title--hedding">Mission</h2>
+                        <p class="main-home__title--text">The Following Text is Placeholder Know asLorem ipsum Which is secrambled Liten Used by Designers to Mimic real Copy.  Lorem ipsum dolor sit amet Nullam vel ultricies Metus, at tincidund arcu. Morbi vestibulum, ligula ut efficitur mollis, mi  massa accumsan justo, accumsan auctor orci lectus ac ipsum. Proin porta nisl sem, ac suscipit lorem dignissim et.  Curabitur euismod nec augue vitae dictum. Nam mattis, massa quis consequat molestie, erat justo vulputate tortor, a  sollicitudin turpis felis eget risus. Aliquam viverra urna felis, eu ornare enim consectetur sed. Morbi vitae ultrices velit. Sed  molestie consectetur metus. Proin neque eros, dapibus ac accumsansodales sit amet velit.  </p>
+                    </div> <!-- ./main-home__title -->
                     
-                    <div class="home__title">
-                        <h2 class="title__hedding">Goals</h2>
-                        <p class="title__text">The Following Text is Placeholder Know asLorem ipsum Which is secrambled Liten Used by Designers to Mimic real Copy.  Lorem ipsum dolor sit amet Nullam vel ultricies Metus, at tincidund arcu. Morbi vestibulum, ligula ut efficitur mollis, mi  massa accumsan justo, accumsan auctor orci lectus ac ipsum. Proin porta nisl sem, ac suscipit lorem dignissim et.  Curabitur euismod nec augue vitae dictum. Nam mattis, massa quis consequat molestie, erat justo vulputate tortor, a  sollicitudin turpis felis eget risus. Aliquam viverra urna felis, eu ornare enim consectetur sed. Morbi vitae ultrices velit. Sed  molestie consectetur metus. Proin neque eros, dapibus ac accumsansodales sit amet velit.  </p>
-                    </div>
-                    <div class="home__row">
-                        <div class="row__text">
-                            <span class="text__number"> 01 .</span>
-                            <span class="text__slash"></span>
-                            <p class="text__pragraghe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non finibus tellus. Donec laoreet ipsum vel eleifend tempor. Suspendisse eu suscipit enim.</p>
-                        </div>
+                    <div class="main-home__title">
+                        <h2 class="main-home__title--hedding">Goals</h2>
+                        <p class="main-home__title--text">The Following Text is Placeholder Know asLorem ipsum Which is secrambled Liten Used by Designers to Mimic real Copy.  Lorem ipsum dolor sit amet Nullam vel ultricies Metus, at tincidund arcu. Morbi vestibulum, ligula ut efficitur mollis, mi  massa accumsan justo, accumsan auctor orci lectus ac ipsum. Proin porta nisl sem, ac suscipit lorem dignissim et.  Curabitur euismod nec augue vitae dictum. Nam mattis, massa quis consequat molestie, erat justo vulputate tortor, a  sollicitudin turpis felis eget risus. Aliquam viverra urna felis, eu ornare enim consectetur sed. Morbi vitae ultrices velit. Sed  molestie consectetur metus. Proin neque eros, dapibus ac accumsansodales sit amet velit.  </p>
+                    </div> <!-- ./main-home__title -->
 
-                        <div class="row__text">
-                            <span class="text__number"> 02 .</span>
-                            <span class="text__slash"></span>
-                            <p class="text__pragraghe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non finibus tellus. Donec laoreet ipsum vel eleifend tempor. Suspend.</p> 
-                        </div>
+                    <div class="main-home__row">
+                        <div class="main-home__row--title">
+                            <span class="main-home__number">01 .</span>
+                            <span class="main-home__slash"></span>
+                            <p class="main-home__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non finibus tellus. Donec laoreet ipsum vel eleifend tempor. Suspendisse eu suscipit enim.</p>
+                        </div> <!-- ./main-home__row--title -->
 
-                        <div class="row__text">
-                            <span class="text__number"> 03 .</span>
-                            <span class="text__slash"></span>
-                            <p class="text__pragraghe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non finibus tellus. Donec laoreet ipsum vel eleifend tempor. Suspendisse eu suscipit enim. Lorem ipsum dolor sit amet.</p>
-                        </div>
+                        <div class="main-home__row--title">
+                            <span class="main-home__number">02 .</span>
+                            <span class="main-home__slash"></span>
+                            <p class="main-home__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non finibus tellus. Donec laoreet ipsum vel eleifend tempor. Suspend.</p> 
+                        </div> <!-- ./main-home__row--title -->
 
-                        <div class="row__text">
-                            <span class="text__number"> 04 .</span>
-                            <span class="text__slash"></span>
-                            <p class="text__pragraghe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non finibus tellus. Donec laoreet ipsum vel eleifend tempor.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main__history">
-                <!-- <div class="container-image">
-                    <div class="history__logo">
-                        <h2 class="logo__title"><q>Creative adaptability is the key to successful conservation.</q></h2>
-                        <h6 class="logo__small-title">ALMA PETERSON CO-FOUNDER</h6>
-                    </div>
-                </div> -->
+                        <div class="main-home__row--title">
+                            <span class="main-home__number">03 .</span>
+                            <span class="main-home__slash"></span>
+                            <p class="main-home__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non finibus tellus. Donec laoreet ipsum vel eleifend tempor. Suspendisse eu suscipit enim. Lorem ipsum dolor sit amet.</p>
+                        </div> <!-- ./main-home__row--title -->
+
+                        <div class="main-home__row--title">
+                            <span class="main-home__number">04 .</span>
+                            <span class="main-home__slash"></span>
+                            <p class="main-home__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non finibus tellus. Donec laoreet ipsum vel eleifend tempor.</p>
+                        </div> <!-- ./main-home__row--title -->
+                    </div> <!-- ./main-home__row -->
+                </div> <!-- ./main__home -->
+            </div> <!-- ./container -->
+            <div class="main-history">
                 <div class="container-image">
-                    <div class="image__logo-text">
+                    <div class="container-image__logo-text">
                         <div class="overly">
-                            <div class="container">
+                            <!-- <div class="container"> -->
                                 <div class="layout-text">
-                                    <h2 class="logo-text__headding"><q>Creative adaptability is the key to successful conservation.</q></h2>
-                                    <h6 class="logo__small-title">ALMA PETERSON CO-FOUNDER</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                    <h2 class="logo-text__headding">Creative adaptability is the key to successful conservation.</h2>
+                                    <h6 class="logo-text__small-title">ALMA PETERSON CO-FOUNDER</h6>
+                                </div> <!-- ./logo-text -->
+                            <!-- </div> ./container -->
+                        </div> <!-- ./overly -->
+                    </div> <!-- ./container-image__logo-text -->
+                </div> <!-- ./container-image -->
                 <div class="container">
-                    <div class="history__text">
-                        <h1 class="history__headin">History</h1>
-                        <p class="text__pragrghe">
+                    <div class="main-history__text">
+                        <h1 class="main-history__text--headin">History</h1>
+                        <p class="main-history__text--pragrghe">
                         The following text is placeholder known as lorem ipsum, which is scrambled Latin used by designers to mimic real copy. Lorem ipsum dolor sit amet Nullam vel ultricies metus, at tincidunt arcu. Morbi vestibulum, ligula ut efficitur mollis, mi massa accumsan justo, accumsan auctor orci lectus ac ipsum. Proin porta nisl sem, ac suscipit lorem dignissim et. Curabitur euismod nec augue vitae dictum. Nam mattis, massa quis consequat molestie, erat justo vulputate tortor, a sollicitudin turpis felis eget risus. Aliquam viverra urna felis, eu ornare enim consectetur sed. Morbi vitae ultrices velit.nSed molestie consectetur metus. Proin neque eros, dapibus ac accumsansodales sit amet velit. Cum sociis natoque penatibus magnis dis parturient montes, nascetur ridiculus mus. Suspendisse potenti. Nulla commodo semperfermentum. Etiam ullamcorper ultrices massa, vel pretium nulla faucibus sed. Quisque sed turpis lacinia, dictum augue ut, blandit turpis.
                         </p>
-                        <p class="text__pragrghe">
+                        <p class="main-history__text--pragrghe">
                         Lorem ipsum dolor sit amet Nullam vel ultricies metus, at tincidunt arcu. Morbi vestibulum, ligula ut efficitur mollis, mi   massa accumsan justo, accumsan auctor orci lectus ac ipsum. Proin porta nisl sem, ac suscipit lorem dignissim et.   Curabitur euismod nec augue vitae dictum. Nam mattis, massa quis consequat molestie, erat justo vulputate tortor, a   sollicitudin turpis felis eget risus. Aliquam viverra urna felis, eu ornare enim consectetur sed.
                         </p>
-                    </div>
-                </div>
-            </div>
+                    </div> <!-- ./main-history__text -->
+                </div> <!-- ./container -->
+            </div> <!-- ./main-history -->
             <div class="container-image">
-                <div class="image__logo-text">
+                <div class="container-image__logo-text">
                     <div class="overly">
                         <div class="container">
-                            <div class="layout-text">
+                            <div class="logo-text">
                                 <div class="main__image">
                                     <div class="control">
                                         <span class="control__text">Ready To Help?</span>
                                         <h3 class="control__headin">Volunteer</h3>
-                                        <input type="button" class="join-today" value="Join Today"> 
+                                        <a href="#" class="join-today">Join Today</a>
                                         <span class="image__slash"></span>
                                         <h3 class="control__headin">Donate</h3>
-                                        <input type="button" class="donaty-today" value="Donaty Today">
+                                        <a href="#" class="donaty-today">Donaty Today</a>
                                     </div>
                                 </div>                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                            </div> <!-- ./logo-text -->
+                        </div> <!-- ./container -->
+                    </div> <!-- ./overly -->
+                </div> <!-- ./container-image__logo-text -->
+            </div> <!-- ./container-image -->
+        </section> <!-- ./main -->
         <!--End Main-->
         
         <!--Start Fotter-->
         <footer>
             <div class="container">
                 <div class="footer">
-                    <ul class="footer__collection">
-                        <li class="collection__item"><a href="#" class="scoil__link"><i class="fa fa-envelope"></i></a></li>
-                        <li class="collection__item"><a href="#" class="scoil__link"><i class="fa fa-facebook"></i></a></li>
-                        <li class="collection__item"><a href="#" class="scoil__link"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
-                    <ul class="footer__collection">
-                        <li class="collection__item"><a href="#" class="item__link">Faq</a></li>
-                        <li class="collection__item"><a href="#" class="item__link">Terms Of Service</a></li>
-                        <li class="collection__item"><a href="#" class="item__link">Privacy Policy</a></li>
-                        <li class="collection__item"><a href="#" class="item__link">Volunteer</a></li>
-                        <li class="collection__item"><a href="#" class="item__link">Donate</a></li>
-                        <li class="collection__item"><a href="#" class="item__link">Contact Us</a></li>
-                    </ul>
-                    <p class="footer__copyright">Powered By <span class="copyright__link"><a href="#" class="copyright__link"> Squarespace</a></span></p>
-            </div>
-            </div>
-        </footer>
-        
+                    <ul class="footer__collection footer__collection--socil">
+                        <li class="footer__collection--item">
+                            <a href="#" class="footer__collection--link">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="footer__collection--item">
+                            <a href="#" class="footer__collection--link">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="footer__collection--item">
+                            <a href="#" class="footer__collection--link">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul> <!-- ./footer__collection socil -->
+                    <ul class="footer__collection footer__collection--linkes">
+                        <li class="footer__collection--item">
+                            <a href="#" class="footer__collection--linknk">Faq</a>
+                        </li>
+                        <li class="footer__collection--item">
+                            <a href="#" class="footer__collection--link">Terms Of Service</a>
+                        </li>
+                        <li class="footer__collection--item">
+                            <a href="#" class="footer__collection--link">Privacy Policy</a>
+                        </li>
+                        <li class="footer__collection--item">
+                            <a href="#" class="footer__collection--link">Volunteer</a></li>
+                        <li class="footer__collection--item">
+                            <a href="#" class="footer__collection--link">Donate</a>
+                        </li>
+                        <li class="footer__collection--item">
+                            <a href="#" class="footer__collection--link">Contact Us</a>
+                        </li>
+                    </ul> <!-- ./footer__collection linkes -->
+                    <p class="footer__copyright">Powered By<span class="copyright__link"><a href="#" class="copyright__link"> Squarespace</a></span></p>
+                </div> <!-- ./footer -->
+            </div> <!-- ./container -->
+        </footer> <!-- footer -->
         <!--End Fotter-->
 
         <script src="js/app.js"></script>

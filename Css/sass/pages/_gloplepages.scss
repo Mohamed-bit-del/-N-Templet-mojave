@@ -2,28 +2,60 @@ body {
   background: $podyBackground;
   font-family: 'Lato', sans-serif;
   font-weight: bolder;
-  height: 1500px;
 }
 
 * {
-  @include prefixis(box-sizing, border-box, webkit mos o)
+  @include prefixis(box-sizing, border-box, webkit mos o);
+  padding: 0;
+  margin: 0;
+  text-align: justify;
 }
 
 ul,
 ol {
   list-style: none;
-  padding: 0;
+}
+
+.--width {
+  width: 90%;
+  margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: Arial,Helvetica,sans-serif;
+
+  @media #{$maxMobile} {
+    hyphens: auto;
+  }
 }
 
 @media #{$maxMobile} {
 
   .mapouter,
   .gmap_canvas {
-    width: 470px !important;
+    width: 350px !important;
   }
 
   iframe.gmap_iframe {
     width: 500px !important;
   }
+}
 
+.overly {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(14, 19, 17, .05);
+
+  .layout-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .logo-text__headding {
+      @extend %pragragheImage;
+    }
+  }
 }

@@ -1,17 +1,22 @@
+// Helper Sass
 @import 'sass/healper/varibles';
 @import 'sass/healper/mixins';
+// Header
 @import 'sass/layout/header';
+// Buttons and Input
 @import 'sass/companenets/button';
-
+// Nested sass @extend
 @import 'sass/layout/grid';
+// Style Glopel Project
 @import 'sass/pages/gloplepages';
+// Pages
 @import 'sass/pages/home';
 @import 'sass/pages/ourImpact';
 @import 'sass/pages/ourteam';
 @import 'sass/pages/volunteer';
 @import 'sass/pages/donate';
 @import 'sass/pages/contact-us';
-
+// Footer
 @import 'sass/layout/footer';
 
 

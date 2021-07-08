@@ -1,7 +1,8 @@
-$maxMobile: "(max-width: 767px)";
-$minSmall: "(min-width: 768px) and (max-width: 991.98px)";
-$minMedium: "(min-width: 992px)";
-$minLarge: "(min-width: 1200px)";
+$maxMobile: "(max-width: 576.98px)";
+$minSmall: "(min-width: 576px) and (max-width: 767.9px)";
+$minMedium: "(min-width: 768px)";
+$minLarge: "(min-width: 992px) ";
+$min-XLarge: "(min-width: 1200px)";
 
 $width: 100%;
 
@@ -9,10 +10,11 @@ $podyBackground: #fafafa;
 $logoColor: #FFF;
 $mainColor: rgba(0,0,0,.6);
 $headinColor: #525252;
-$textColor: #cdcdcd;
+$textColor: #c5c5c5;
 $linkColor: #121212;
 $textOurImpact: #a8a8a8;
 $borderColor: #e1d7d7;
 $graphColor: #797979;
 $graphHover: #b0adad;
 $lableColor: #c0b8b5;
+$tooltipsColor: #555;

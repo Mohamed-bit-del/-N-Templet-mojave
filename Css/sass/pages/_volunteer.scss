@@ -7,7 +7,7 @@
   margin-block-end: 150px;
 
   .information__volunteer-title {
-    margin-block-end: 100px;
+    margin-block-end: 70px;
     line-height: 1.5;
 
     @media #{$minSmall} {
@@ -20,15 +20,16 @@
 
     .volunteer-title__headding {
       color: $headinColor;
-      font-weight: bolder;
+      padding-block-end: 20px;
+      // font-weight: bolder;
 
-      @media #{$minSmall} {
-        font-size: 50px;
-      }
+      // @media #{$minSmall} {
+      //   font-size: 50px;
+      // }
 
-      @media #{$minMedium} {
-        font-size: 35px;
-      }
+      // @media #{$minMedium} {
+      //   font-size: 35px;
+      // }
     }
 
 

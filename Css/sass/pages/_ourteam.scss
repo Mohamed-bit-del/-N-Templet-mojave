@@ -1,15 +1,20 @@
 /*=-=-=-=-=-=-=-=-=-=-=- Start Main Our Team -=-=-=-=-=-=-=-=-=-=*/
 .our-team {
+
+  img {
+    width: 100%;
+    
+    @media #{$maxMobile} {
+        width: 100%;
+    }
+    
+    @media #{$minMedium} {
+        width: 500px;
+    }
+  }
+    
   .team__person-one {
     @extend %groub-image-title;
-
-    @media #{$maxMobile} {
-      .person-one__logo {
-        img {
-          width: 100%;
-        }
-      }
-    }
 
     @media #{$maxMobile} {
       flex-direction: column;
@@ -29,6 +34,10 @@
     .person-one__title {
       @extend %groub-title;
 
+      @media #{$maxMobile} {
+        margin-block-start: 20px;
+      }
+
       .title__name {
         @extend %title-name;
       }
@@ -47,14 +56,6 @@
     @extend %groub-image-title;
 
     @media #{$maxMobile} {
-      .person-two__logo {
-        img {
-          width: 100%;
-        }
-      }
-    }
-
-    @media #{$maxMobile} {
       flex-direction: column;
       text-align: center;
     }
@@ -71,10 +72,14 @@
 
     .person-two__title {
       @extend %groub-title;
-      direction: rtl;
 
-      @media #{$minMedium} {
+      @media #{$maxMobile} {
         direction: ltr;
+        margin-block-start: 20px;
+      }
+
+      @media #{$minLarge} {
+        direction: rtl;
       }
 
       .title__name {
@@ -95,14 +100,6 @@
     @extend %groub-image-title;
 
     @media #{$maxMobile} {
-      .person-three__logo {
-        img {
-          width: 100%;
-        }
-      }
-    }
-
-    @media #{$maxMobile} {
       flex-direction: column;
       text-align: center;
     }
@@ -119,6 +116,10 @@
 
     .person-three__title {
       @extend %groub-title;
+
+      @media #{$maxMobile} {
+        margin-block-start: 20px;
+      }
 
       .title__name {
         @extend %title-name;
@@ -140,24 +141,24 @@
 /*=-=-=-=-=-=-=-=-=-=-=- Mailte Coding -=-=-=-=-=-=-=-=-=-=-=-=*/
 %groub-image-title {
   display: flex;
-
+  margin-block: 30px;
 
   // @media #{$minSmall} {
   //   margin-block: 250px;
   // }
 
-  @media #{$minMedium} {
-    margin-block: 50px;
-  }
+  // @media #{$minMedium} {
+  //   margin-block: 50px;
+  // }
 
-  @media #{$minLarge} {
-    margin-block: 50px;
-  }
+  // @media #{$minLarge} {
+  //   margin-block: 50px;
+  // }
 }
 
 %groub-title {
   padding-inline: 20px;
-  line-height: 1.5;
+  line-height: 1.7;
 
 
   @media #{$minSmall} {
@@ -171,36 +172,12 @@
 
 %title-name {
   color: $headinColor;
-  font-size: 40px;
-
-  // @media #{$minSmall} {
-  //   font-size: 100px;
-  // }
-
-  // @media #{$minMedium} {
-  //   font-size: 60px;
-  // }
-
-  // @media #{$minLarge} {
-  //   font-size: 40px;
-  // }
+  font-size: 20px;
 }
 
 %title__headding {
   color: $textOurImpact;
-  font-size: 30px;
-
-  // @media #{$minSmall} {
-  //   font-size: 80px;
-  // }
-
-  // @media #{$minMedium} {
-  //   font-size: 40px;
-  // }
-
-  // @media #{$minLarge} {
-  //   font-size: 30px;
-  // }
+  font-size: 20px;
 }
 
 // %title__text {

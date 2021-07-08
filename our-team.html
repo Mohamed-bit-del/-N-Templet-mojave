@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Our Team --- Mojave</title>
 <!--        <link rel="shortcut icon" type="image/x-icon" href="https://assets.squarespace.com/universal/default-favicon.ico"/>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/normaliza.css" />
         <link rel="stylesheet" href="Css/style.css" />
@@ -16,10 +17,10 @@
 
         <div class="create-site">
             <a href="#" class="create-site__link">
-                <span class="link__icon"><img src="Images/download.svg" class="link__logo" alt="logo"></span>
-                <div class="link__title">
-                    <span class="title__text-site">Create a Site Like This</span>
-                    <span class="title__small-site">Free trial. Instant access</span>
+                <span class="create-site__link--icon"><img src="Images/download.svg" class="link__logo" alt="logo"></span>
+                <div class="create-site__link--title">
+                    <span class="create-site__link--text-site">Create a Site Like This</span>
+                    <span class="create-site__link--small-site">Free trial. Instant access</span>
                 </div>
              </a>
         </div>
@@ -30,33 +31,33 @@
         <header>
             <div class="container">
                 <div class="mobile">
-                    <a href="javascript:void(0)" onclick="openNav()" class="mobile__screen">
-                        <span class="screen__btn"></span>
-                        <span class="screen__btn"></span>
-                        <span class="screen__btn"></span>
-                    </a>
-                </div>
+                    <a href="javascript:void(0)" onclick="openNav()" class="mobile-screen">
+                        <span class="mobile__screen--btn"></span>
+                        <span class="mobile__screen--btn"></span>
+                        <span class="mobile__screen--btn"></span>
+                    </a> <!-- ./mobile-screen -->
+                </div> <!-- ./mobile -->
                 <div class="header">
                     <div class="navbar">
-                        <div class="header__collection-left">
-                            <a href="javascript:void(0)" onclick="closeNav()" class="mobil__close" id="mobil__close">X</a>
-                            <ul class="collection-left__lists" id="mobile__screen">
-                                <li class="lists__item"><a href="index.html" id="item__link">About Us</a></li>
-                                <li class="lists__item"><a href="our-impact.html" id="item__link">Our Impact</a></li>
-                                <li class="lists__item"><a href="our-team.html" id="item__link">Our Team</a></li>
-                            </ul>
-                        </div>
-                        <h1 class="header__headding"><a href="#" class="headding__link">Mojave</a></h1>
-                        <div class="header__collection-right">
-                            <ul class="collection-right__list" id="mobile">
-                                <li class="list_item"><a href="volunteer.html" id="item__link"> Volunteer</a></li>
-                                <li class="list_item"><a href="donate.html" id="item__link">Donate</a></li>
-                                <li class="list_item"><a href="contact-us.html" id="item__link">Countact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <div class="navbar__collection-left">
+                            <a href="javascript:void(0)" onclick="closeNav()" class="mobil-close" id="mobil-close">X</a>
+                            <ul class="navbar__collection-left--lists" id="mobile-screen">
+                                <li class="navbar--item"><a href="index.html" class="navbar__link navbar--item__link" id="link">About Us</a></li>
+                                <li class="navbar--item"><a href="our-impact.html" class="navbar__link navbar--item__link" id="link">Our Impact</a></li>
+                                <li class="navbar--item"><a href="our-team.html" class="navbar__link navbar--item__link" id="link">Our Team</a></li>
+                            </ul> <!-- ./navbar__collection-left--lists -->
+                        </div> <!-- ./navbar__collection-left -->
+                        <h1 class="navbar__headding"><a href="#" class="navbar__headding--link">Mojave</a></h1>
+                        <div class="navbar__collection-right">
+                            <ul class="navbar__collection-right--lists" id="mobile">
+                                <li class="navbar--item"><a href="volunteer.html" class="navbar__link navbar--item__link" id="link"> Volunteer</a></li>
+                                <li class="navbar--item"><a href="donate.html" class="navbar__link navbar--item__link" id="link">Donate</a></li>
+                                <li class="navbar--item"><a href="contact-us.html" class="navbar__link navbar--item__link" id="link">Countact Us</a></li>
+                            </ul> <!-- ./navbar__collection-right--lists -->
+                        </div> <!-- ./navbar__collection-right -->
+                    </div> <!-- ./navbar -->
+                </div> <!-- ./header -->
+            </div> <!-- ./container -->
         </header>
         <!--End Header-->
         
@@ -107,12 +108,12 @@
         <footer>
             <div class="container">
                 <div class="footer">
-                    <ul class="footer__collection">
+                    <ul class="footer__collection socil">
                         <li class="collection__item"><a href="#" class="scoil__link"><i class="fa fa-envelope"></i></a></li>
                         <li class="collection__item"><a href="#" class="scoil__link"><i class="fa fa-facebook"></i></a></li>
                         <li class="collection__item"><a href="#" class="scoil__link"><i class="fa fa-twitter"></i></a></li>
                     </ul>
-                    <ul class="footer__collection">
+                    <ul class="footer__collection linkes">
                         <li class="collection__item"><a href="#" class="item__link">Faq</a></li>
                         <li class="collection__item"><a href="#" class="item__link">Terms Of Service</a></li>
                         <li class="collection__item"><a href="#" class="item__link">Privacy Policy</a></li>
