@@ -502,7 +502,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   background: #797979;
-  left: 4%;
+  left: 5%;
   bottom: 29px;
   width: 15%;
   height: 77px;
@@ -517,7 +517,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   background: #797979;
-  left: 29%;
+  left: 30%;
   bottom: 29px;
   width: 15%;
   height: 194px;
@@ -532,7 +532,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   background: #797979;
-  left: 54%;
+  left: 55%;
   bottom: 29px;
   width: 15%;
   height: 312px;
@@ -547,7 +547,7 @@ h1, h2, h3, h4, h5, h6 {
   content: '';
   position: absolute;
   background: #797979;
-  left: 79%;
+  left: 80%;
   bottom: 29px;
   width: 15%;
   height: 429px;
@@ -585,11 +585,15 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   border-radius: 5px;
   padding-block: 5px;
+  z-index: 1;
   -webkit-transition: opacity 0.5;
   -moz-transition: opacity 0.5;
   -ms-transition: opacity 0.5;
   -o-transition: opacity 0.5;
   transition: opacity 0.5; }
+@media (max-width: 576.98px) {
+  .graph .graph-lists .tooltips__text {
+    width: 90px; } }
 .graph .graph-lists .tooltips__text:after {
   content: "";
   position: absolute;
@@ -600,26 +604,38 @@ h1, h2, h3, h4, h5, h6 {
   border-style: solid;
   border-color: #555 transparent transparent transparent; }
 .graph .graph-lists .graph-lists--outline-one .tooltips__text {
-  left: 5.5%;
+  left: 7%;
   bottom: 120px; }
+@media (max-width: 576.98px) {
+  .graph .graph-lists .graph-lists--outline-one .tooltips__text {
+    left: 0; } }
 .graph .graph-lists .graph-lists--outline-one:hover .tooltips__text {
   opacity: 1;
   visibility: visible; }
 .graph .graph-lists .graph-lists--outline-two .tooltips__text {
-  left: 30%;
+  left: 32%;
   bottom: 234px; }
+@media (max-width: 576.98px) {
+  .graph .graph-lists .graph-lists--outline-two .tooltips__text {
+    left: 18%; } }
 .graph .graph-lists .graph-lists--outline-two:hover .tooltips__text {
   opacity: 1;
   visibility: visible; }
 .graph .graph-lists .graph-lists--outline-three .tooltips__text {
-  left: 55%;
+  left: 56%;
   bottom: 352px; }
+@media (max-width: 576.98px) {
+  .graph .graph-lists .graph-lists--outline-three .tooltips__text {
+    left: 43%; } }
 .graph .graph-lists .graph-lists--outline-three:hover .tooltips__text {
   opacity: 1;
   visibility: visible; }
 .graph .graph-lists .graph-lists--outline-four .tooltips__text {
-  left: 80%;
+  left: 82%;
   bottom: 470px; }
+@media (max-width: 576.98px) {
+  .graph .graph-lists .graph-lists--outline-four .tooltips__text {
+    left: 68%; } }
 .graph .graph-lists .graph-lists--outline-four:hover .tooltips__text {
   opacity: 1;
   visibility: visible; }

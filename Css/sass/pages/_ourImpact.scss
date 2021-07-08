@@ -124,7 +124,7 @@
           content: '';
           position: absolute;
           background: $graphColor;
-          left: 4%;
+          left: 5%;
           bottom: 29px;
           width: 15%;
           height: 77px;
@@ -139,7 +139,7 @@
           content: '';
           position: absolute;
           background: $graphColor;
-          left: 29%;
+          left: 30%;
           bottom: 29px;
           width: 15%;
           height: 194px;
@@ -154,7 +154,7 @@
         content: '';
         position: absolute;
         background: $graphColor;
-        left: 54%;
+        left: 55%;
         bottom: 29px;
         width: 15%;
         height: 312px;
@@ -169,7 +169,7 @@
         content: '';
         position: absolute;
         background: $graphColor;
-        left: 79%;
+        left: 80%;
         bottom: 29px;
         width: 15%;
         height: 429px;
@@ -213,7 +213,12 @@
           text-align: center;
           border-radius: 5px;
           padding-block: 5px;
+          z-index: 1;
           @include prefixis(transition, opacity .5, webkit moz ms o);
+
+          @media #{$maxMobile} {
+            width: 90px;
+          }
    
           &:after {
             content: "";
@@ -231,32 +236,48 @@
       }
 
       .graph-lists--outline-one .tooltips__text {
-        left: 5.5%;
+        left: 7%;
         bottom: 120px;
+
+        @media #{$maxMobile} {
+          left: 0;
+        }
       }
       .graph-lists--outline-one:hover .tooltips__text {
         opacity: 1;
         visibility: visible;
       }
       .graph-lists--outline-two .tooltips__text {
-        left: 30%;
+        left: 32%;
         bottom: 234px;
+
+        @media #{$maxMobile} {
+          left: 18%;
+        }
       }
       .graph-lists--outline-two:hover .tooltips__text {
         opacity: 1;
         visibility: visible;
       }
       .graph-lists--outline-three .tooltips__text {    
-        left: 55%;
+        left: 56%;
         bottom: 352px;
+
+        @media #{$maxMobile} {
+          left: 43%;
+        }
       }
       .graph-lists--outline-three:hover .tooltips__text {
         opacity: 1;
         visibility: visible;
       }
       .graph-lists--outline-four .tooltips__text {
-        left: 80%;
+        left: 82%;
         bottom: 470px;
+
+        @media #{$maxMobile} {
+          left: 68%;
+        }
       }
       .graph-lists--outline-four:hover .tooltips__text {
         opacity: 1;
